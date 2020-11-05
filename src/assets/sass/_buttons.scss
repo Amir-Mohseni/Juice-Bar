@@ -1,0 +1,116 @@
+.btn{
+    background-color: transparent;
+    border: none;
+    padding: 5px;
+
+}
+
+
+.plus-btn{
+    padding: 10px !important;
+    color: $light;
+    right: 8%;
+    top: 29px;
+    width: 54px;
+    height: 54px;
+
+    svg{
+        display: block;
+        margin: auto;
+    }
+
+    &:hover{
+        color: $white;
+
+    }
+
+    &:focus{
+        outline: none;
+        border: none;
+        box-shadow: 0 0 4px $primary;
+    }
+
+}
+
+.edit-btn{
+    height: 2.1em;
+    width: 2.1em;
+    bottom: -14px;
+    right: 20%;
+    display: none;
+    transition: all 0.4s;
+
+    &:hover{
+        background-color: $danger !important;
+        color: $white;
+    }
+
+    &:focus{
+        outline: none;
+        border: none;
+        box-shadow: 0 0 8px $danger;
+    }
+}
+
+.trash-btn{
+    height: 2.1em;
+    width: 2.1em;
+    bottom: -14px;
+    right: 5%;
+    display: none;
+    transition: all 0.4s;
+
+    &:hover{
+        background-color: $danger !important;
+        color: $white;
+    }
+
+    &:focus{
+        outline: none;
+        border: none;
+        box-shadow: 0 0 4px $danger;
+    }
+
+}
+
+.add-btn{
+
+    height: 40px;
+    width: 40px;
+    bottom: -30px;
+    right: -30px;
+    // display: none;
+    transition: all 0.4s;
+
+    &:hover{
+        background-color: $primary !important;
+        color: $white;
+    }
+
+    &:focus{
+        outline: none;
+        border: none;
+        box-shadow: 0 0 4px $primary;
+    }
+}
+
+.remove-btn{
+
+    height: 40px;
+    width: 40px;
+    bottom: -30px;
+    left: -30px;
+    // display: none;
+    transition: all 0.4s;
+
+    &:hover{
+        background-color: $primary !important;
+        color: $white;
+    }
+
+    &:focus{
+        outline: none;
+        border: none;
+        box-shadow: 0 0 4px $primary;
+    }
+}

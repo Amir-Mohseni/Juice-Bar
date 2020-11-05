@@ -1,0 +1,253 @@
+.edit-user-modal{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    border-bottom: 0;
+
+
+    .edit-form-wrapper-div{
+        width: 60%;
+        height: 65%;
+        min-width: 450px;
+        min-height: 370px;
+        border-radius: 12px;
+        z-index: 600;
+
+        .close-modal{
+            top: -12px;
+            right: -12px;
+            background-color: $danger;
+            width: 40px;
+            height: 40px;
+            color: #ffffff;
+
+            &:hover{
+                background-color: darken($color: $danger, $amount: 8) !important;
+            }
+
+            &:focus{
+                outline: none;
+                border: none;
+                box-shadow: 0 0 4px $danger;
+            }
+        }
+
+        form{
+
+            .flex-col{
+
+                h6{
+                    font-size: 1.6rem;
+                    font-weight: 700;
+                    letter-spacing: 0.04rem;
+                    width: 100%;
+                    text-align: left;
+                }
+
+                div{
+
+
+                    .ingredients{
+
+                        overflow-y: auto;
+                        width: 80%;
+                        height: 100%;
+                        overflow-x: hidden;
+                        max-height: 100px;
+                        transition: all 0.8s;
+
+                        &::-webkit-scrollbar {
+
+                            background-color: transparent !important;
+                            width: 8px;
+
+                        }
+
+                        &::-webkit-scrollbar-thumb {
+
+                            background-color: $primary ;
+                            border-radius: 8px;
+                            width: 3px;
+                        }
+
+                        /* Handle on hover */
+                        &::-webkit-scrollbar-thumb:hover {
+
+                            background-color: darken($color: $primary, $amount: 10) !important;
+
+                        }
+
+                        .card-subtitle{
+                            // padding: 0 !important;
+                            padding: 4px 6px;
+                            font-weight: 600;
+                            height: 27px;
+                            display: flex;
+                            justify-content: start;
+                            align-items: center;
+                            background-color: $secondary;
+                            word-wrap: normal;
+                            word-break: break-all;
+                            color: $light;
+                            font-size: 0.8rem;
+                            margin-right: 7px;
+                            letter-spacing: 0.02rem;
+                            cursor: pointer;
+                            transition: background-color 0.4s;
+
+                            &:hover{
+
+                                background-color: $primary ;
+                                color: #ffffff ;
+                            }
+                        }
+
+                        .included{
+                            background-color: $primary ;
+                            color: #ffffff ;
+                            // animation: 'toggle-addon' 0.3s ease forwards;
+
+                            &:hover{
+
+                                background-color: $danger ;
+                                color: #ffffff ;
+                            }
+
+                        }
+                    }
+
+                    .image-box{
+                        width: 20%;
+                    }
+                }
+
+            }
+
+            .amount{
+
+                div p{
+                    font-size: 1.2rem;
+                    font-weight: 600;
+                    margin: 0;
+                    padding: 0;
+                }
+
+                .count-area{
+                    width: 50%;
+                    justify-content: space-evenly;
+                    color: #000000;
+
+                    .decrease-btn{
+                        width: 33px;
+                        height: 33px;
+                        padding: 0px !important;
+                        // border: 1px solid rgba($color: #000000, $alpha: 0.4);
+                        transition: all 0.4s;
+
+                        svg{
+                            display: block;
+                            margin: auto;
+                        }
+
+                        &:hover{
+                            background-color: darken($color: $primary, $amount: 8) !important;
+                            color: $white;
+                            // border: 1px solid rgba($color: #ffffff, $alpha: 0.4);
+
+                            svg{
+                                color: $white !important;
+                            }
+                        }
+
+                        &:focus{
+                            outline: none;
+                            border: none;
+                            box-shadow: 0 0 4px $primary;
+                        }
+                    }
+
+                    .count-num{
+                        background-color: $secondary;
+                        border-radius: 8px;
+                        padding: 5px 7px;
+                        color: $white;
+                    }
+
+                    .increase-btn{
+                        width: 33px;
+                        height: 33px;
+                        padding: 5px !important;
+                        // border: 1px solid rgba($color: #000000, $alpha: 0.4);
+
+                        svg{
+                            display: block;
+                            margin: auto;
+                        }
+
+                        &:hover{
+                            background-color: darken($color: $primary, $amount: 8) !important;
+                            color: $white;
+                            // border: 1px solid rgba($color: #ffffff, $alpha: 0.4);
+
+                            svg{
+                                color: $white !important;
+                            }
+                        }
+
+                        &:focus{
+                            outline: none;
+                            border: none;
+                            box-shadow: 0 0 4px $primary;
+                        }
+                    }
+
+                }
+            }
+
+            .update-area{
+
+
+                .submit-btn{
+                    font-size: 1rem;
+                    letter-spacing: 0.002rem;
+                    font-weight: 600;
+                    padding: 7px 10px;
+                    width: 120px;
+                    border-radius: 8px;
+                    color: $white;
+                    margin-top: 5%;
+                    margin-bottom: 20px;
+
+                    &:hover{
+                        background-color: darken($color: $primary, $amount: 8) !important;
+
+                    }
+
+                    &:focus{
+                        outline: none;
+                        border: none;
+                        box-shadow: 0 0 4px $primary;
+                    }
+
+                }
+            }
+
+        }
+    }
+
+    .edit-user-modal-bg{
+
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        border-bottom: 0;
+        background-color: rgba($color: #000000, $alpha: 0.3);
+        z-index: 500;
+
+    }
+}

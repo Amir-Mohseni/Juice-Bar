@@ -1,0 +1,432 @@
+// **********************************************************************nav right side style ************************************************************************
+
+.navbar-rightside-cart-page {
+  width: 20%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .confirm-cart-btn {
+    color: $white !important;
+    padding: 12px !important;
+    right: 7%;
+    top: 27px;
+
+    &:hover {
+      color: $white;
+    }
+
+    &:focus {
+      outline: none;
+      border: none;
+      box-shadow: 0 0 4px $primary;
+    }
+  }
+}
+
+// **********************************************************************Cart Style***********************************************************************************
+
+.cart-component {
+  .cart-btn {
+    padding: 12px !important;
+    color: $light;
+    right: 12%;
+    top: 27px;
+
+    &:hover {
+      color: $white;
+    }
+
+    &:focus {
+      outline: none;
+      border: none;
+      box-shadow: 0 0 4px $primary;
+    }
+  }
+
+  @media (max-width: 1200px) {
+    .cart-btn {
+      right: 13% !important;
+    }
+  }
+  @media (max-width: 1000px) {
+    .cart-btn {
+      right: 14% !important;
+    }
+  }
+  @media (max-width: 850px) {
+    .cart-btn {
+      right: 15% !important;
+    }
+  }
+  @media (max-width: 768px) {
+    .cart-btn {
+      right: 16% !important;
+    }
+  }
+  @media (max-width: 640px) {
+    .cart-btn {
+      right: 18% !important;
+    }
+  }
+  @media (max-width: 500px) {
+    .cart-btn {
+      right: 20% !important;
+    }
+  }
+  @media (max-width: 480px) {
+    .cart-btn {
+      right: 22% !important;
+    }
+  }
+  @media (max-width: 380px) {
+    .cart-btn {
+      right: 24% !important;
+    }
+  }
+
+  .cart-contains-div {
+    top: 100px;
+    right: 150px;
+    z-index: 100;
+    width: 300px;
+    height: fit-content;
+    min-height: 175px !important;
+    max-height: 400px !important;
+    padding-right: 1px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background-color: $white;
+
+    &::-webkit-scrollbar {
+      background-color: transparent !important;
+      width: 8px;
+    }
+
+    /* Handle on hover */
+    &::-webkit-scrollbar-thumb:hover {
+      background-color: darken($color: $primary, $amount: 16) !important;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: $primary;
+      border-radius: 8px;
+      width: 3px;
+    }
+
+    h5 {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      line-height: 2rem;
+    }
+
+    .card {
+      width: 100%;
+      border: none;
+      height: 175px;
+      min-height: 175px !important;
+      overflow: hidden;
+      border-radius: 0;
+      border-bottom: 1px solid rgba($color: #000000, $alpha: 0.2);
+      background-color: $white;
+      transition: background-color 0.4s;
+      padding: 5px 5px;
+
+      &:hover {
+        background-color: $primary;
+        border-bottom: 1px solid rgba($color: #000000, $alpha: 0) !important;
+        color: $white;
+
+        .juice-count {
+          background-color: $white !important;
+          color: $primary !important;
+        }
+
+        .addons-secion {
+          div {
+            background-color: $white !important;
+            color: $black !important;
+          }
+        }
+      }
+
+      .card-body {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        transition: all 0.4s;
+
+        .card-text-setion {
+          width: 60%;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: space-between;
+
+          .card-title {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+
+            h6 {
+              margin: 0;
+              padding: 0;
+              font-size: 1.3rem;
+              font-weight: 600;
+              display: flex;
+              white-space: nowrap;
+            }
+
+            .juice-count {
+              margin: 0;
+              padding: 0;
+              // padding-top: 2px !important;
+              // padding-right: 1px !important;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              margin-left: 10px;
+              width: 29px;
+              height: 29px;
+              font-size: 1rem;
+              font-weight: 600;
+              color: $white;
+              transition: background-color 0.3s;
+            }
+          }
+
+          .addons-secion {
+            width: 100%;
+            height: 95px;
+            overflow-y: auto;
+            overflow-x: hidden;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: flex-start;
+            word-wrap: normal;
+            word-break: keep-all !important;
+
+            &::-webkit-scrollbar {
+              background-color: transparent !important;
+              width: 8px !important;
+              // height: 8px !important;
+            }
+
+            /* Handle on hover */
+            &::-webkit-scrollbar-thumb:hover {
+              background-color: darken($color: $white, $amount: 16) !important;
+            }
+
+            &::-webkit-scrollbar-thumb {
+              background-color: $white;
+              border-radius: 8px;
+              width: 3px !important;
+            }
+
+            div {
+              padding: 6px 10px !important;
+              font-weight: 600;
+              width: auto;
+              word-wrap: unset;
+              word-break: keep-all;
+              border-radius: 6px;
+              height: 27px;
+              display: flex;
+              justify-content: start;
+              align-items: center;
+              background-color: $secondary;
+              color: $light;
+              font-size: 0.8rem;
+              margin-bottom: 7px;
+              margin-right: 5px;
+              letter-spacing: 0.02rem;
+              cursor: pointer;
+              transition: background-color 0.8s;
+              padding: 0px 5px;
+              text-align: center;
+
+              span {
+                text-align: center;
+                white-space: nowrap;
+              }
+
+              &:hover {
+                background-color: $danger !important;
+                color: $white !important;
+              }
+            }
+          }
+        }
+
+        .card-image {
+          width: 40%;
+
+          img {
+          }
+        }
+      }
+
+      .add-btn-cart {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $white;
+        height: 25px;
+        width: 25px;
+        bottom: 5px;
+        right: 5px;
+        transition: all 0.4s;
+
+        &:hover {
+          background-color: $white !important;
+          color: $black;
+        }
+
+        &:focus {
+          outline: none;
+          border: none;
+          box-shadow: 0 0 4px $white;
+        }
+      }
+
+      .remove-btn-cart {
+        display: flex;
+        justify-content: center;
+        color: $white;
+        align-items: center;
+        height: 25px;
+        width: 25px;
+        bottom: 5px;
+        right: 35px;
+        transition: all 0.4s;
+
+        &:hover {
+          background-color: $white !important;
+          color: $black;
+        }
+
+        &:focus {
+          outline: none;
+          border: none;
+          box-shadow: 0 0 4px $white;
+        }
+      }
+    }
+
+    .confirm-Juices {
+      width: 100%;
+      height: 90px;
+      display: flex;
+      padding: 10px;
+      justify-content: center;
+      align-items: center;
+      // position: fixed;
+      // top: 300px;
+      // right: -10px;
+      // bottom: 0;
+      // left: 0;
+      // right: 0;
+
+      button {
+        font-size: 1.2rem;
+      }
+    }
+  }
+
+  .background-when-cart-active {
+    width: 100vw;
+    height: 100vh;
+    opacity: 0;
+    z-index: 5;
+  }
+}
+
+.cart-opened-background {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.1;
+  background-color: rgba($color: #000000, $alpha: 0.1);
+  z-index: 5;
+}
+
+// *******************************************************Cart Animations**********************************************************************
+
+@keyframes slide-cart-in {
+  0% {
+    transform: translateX(500px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-cart-out {
+  0% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateX(500px);
+    opacity: 0;
+  }
+}
+
+@keyframes slide-cart-in-phone {
+  0% {
+    transform: translateX(400px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(120px);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-cart-out-phone {
+  0% {
+    transform: translateX(120px);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateX(400px);
+    opacity: 0;
+  }
+}
+
+.slide-cart-in {
+  animation: "slide-cart-in" 0.5s ease forwards;
+}
+
+.slide-cart-out {
+  animation: "slide-cart-out" 0.5s ease forwards;
+}
+
+@media (max-width: 768px) {
+  .slide-cart-in {
+    animation: "slide-cart-in-phone" 0.5s ease forwards !important;
+  }
+
+  .slide-cart-out {
+    animation: "slide-cart-out-phone" 0.5s ease forwards !important;
+  }
+}
